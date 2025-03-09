@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { AutomationFlow } from "@/components/AutomationFlow";
 import PublishModal from "@/components/PublishModal";
 import { toast } from "sonner";
@@ -18,6 +19,9 @@ const Index = () => {
       <header className="flex items-center justify-between px-8 py-4 bg-white border-b border-gray-100">
         <h1 className="text-2xl font-medium">Workflow Automation</h1>
         <div className="flex gap-3">
+          <Link to="/automations" className="px-4 py-2 text-sm bg-gray-100 rounded-md hover:bg-gray-200 transition-colors">
+            View Automations
+          </Link>
           <button className="px-4 py-2 text-sm bg-gray-100 rounded-md hover:bg-gray-200 transition-colors">
             Save Draft
           </button>
